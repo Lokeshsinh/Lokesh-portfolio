@@ -1,0 +1,162 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+
+
+.navbarContainer {
+    width: 1300px;
+    height: 75px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    border-radius: 20px;
+
+}
+
+
+.navbarLogo {
+    width: 180px;
+    height: auto;
+}
+
+.navbarLogo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+
+.navbarLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarLinks ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarLinks ul li {
+    list-style: none;
+    font-size: 17px;
+    margin: 0 15px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.navbarLinks ul li::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #208F63;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.5s ease-in-out;
+}
+
+.navbarLinks ul li:hover::before {
+    color: #208F63;
+    transform: scaleX(1);
+}
+
+.navbarLinks ul li:hover {
+    color: #208F63;
+}
+
+/* button */
+.navbarButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbarButtons button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    background: #208F63;
+    color: white;
+    font-size: 17px;
+    font-weight: 550;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.navbarButtons button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.5s;
+    z-index: -1;
+    border-radius: 20px;
+}
+
+.navbarButtons button:hover::before {
+    transform: scaleX(1);
+}
+
+.navbarButtons button:hover {
+    color: #208F63;
+    border: 2px solid #208F63;
+}
+
+
+/* Mobile icons */
+.mobileIcon {
+    display: none;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.mobileIcon img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.Xicon {
+    width: 40px;
+    height: 40px;
+
+}
+
+
+@media (max-width: 867px) {
+    .navbarLinks {
+        display: none;
+    }
+
+    .navbarButtons {
+        display: none;
+    }
+
+    .mobileIcon {
+        display: block;
+    }
+}
