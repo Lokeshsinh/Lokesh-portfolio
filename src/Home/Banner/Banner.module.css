@@ -10,12 +10,13 @@
     background: #e6e8e7c0;
     position: relative;
     z-index: 1;
-    display: flex;
+    /* display: flex;
     justify-content:  center;
-    align-items:  center;
-    padding: 0 50px;
+    align-items:  center; */
+    padding: 0 60px;
 
 }
+
 
 .bannerFlex {
     width: 100%;
@@ -31,12 +32,13 @@
     align-items: flex-start;
     flex-direction: column;
     gap: 20px;
+    padding-left: 5px;
 }
 
 /* text */
 .bannerText {
     padding-top: 3rem;
-    width:  700px;
+    width: 590px;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -58,7 +60,7 @@
 }
 
 .bannerName h1 {
-    font-size: 5rem;
+    font-size: 4.2rem;
     font-weight: 700;
 }
 
@@ -74,7 +76,7 @@
 }
 
 .bannerSlide h1 {
-    font-size: 4rem;
+    font-size: 3.4rem;
     font-weight: 700;
 }
 
@@ -188,12 +190,83 @@
 }
 
 .middleImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 400px;
-    height: 600px
+    height: 600px;
 }
 
 .middleImage img {
     width: 100%;
     height: 100%;
 
+}
+
+
+/* last Image */
+.lastText {
+    padding: 0 0 2rem 2rem;
+    width: 560px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.lastText p {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.722);
+    gap: 20px;
+}
+
+.lastText p span {
+    color: #208F63;
+    font-weight: 550;
+}
+
+.styleBox {
+    width: 100%;
+    margin-top: 2rem;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.styleBoxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.stylesUser {
+    padding: 20px 40px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.stylesUser:hover {
+    transform: translateY(-5px);
+    border-color: #208F63;
+    box-shadow: 0 5px 15px rgba(32, 143, 99, 0.1);
+}
+
+.stylesUser h3 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #208F63;
+}
+
+.stylesUser span {
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+    text-align: center;
 }

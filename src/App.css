@@ -1,0 +1,44 @@
+.cursor {
+    width: 20px;
+    height: 20px;
+    background-color: #208F63;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 999999;
+    transition: left 0.05s linear, top 0.05s linear;
+    box-shadow:
+        0 0 10px #208F63,
+        0 0 25px #208F63,
+        0 0 40px rgba(32, 143, 99, 0.5);
+
+    animation: cursorPulse 1.5s infinite ease-in-out;
+}
+
+
+.cursor:hover {
+    scale: 1.8;
+}
+
+@keyframes cursorPulse {
+    0% {
+        box-shadow: 0 0 5px #208F63;
+        scale: 1;
+    }
+
+    50% {
+        box-shadow:
+            0 0 15px #208F63,
+            0 0 30px #208F63,
+            0 0 45px rgba(32, 143, 99, 0.5);
+        scale: 1.3;
+    }
+
+    100% {
+        box-shadow: 0 0 5px #208F63;
+        scale: 1;
+    }
+}

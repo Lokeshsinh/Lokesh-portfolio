@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from './Banner.module.css'
 import banner from '../../assets/Logo/banner.png'
-
+import { motion } from "motion/react";
 const developer = [
     "Frontend Developer",
     "FullStack Developer",
@@ -29,7 +29,12 @@ function Banner() {
         <>
             <section className={styles.bannerUser}>
                 <div className={styles.bannerFlex}>
-                    <div className={styles.bannerText}>
+                    {/* text */}
+                    <motion.div className={styles.bannerText}
+                        initial={{ opacity: 0, x: -100 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1 }}>
                         <div className={styles.bannerName}>
                             <h2>I'<span>M</span></h2>
                             <h1>Javarikapishan <br /><span>Lokesh</span></h1>
@@ -45,13 +50,49 @@ function Banner() {
                             <button className={styles.FirstButton}>See my work</button>
                             <button className={styles.secondButton}>Get in Touch</button>
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/* Middle image */}
 
-                    <div className={styles.middleImage}>
-                        <img  src={banner} alt="banner" />
-                    </div>
+                    <motion.div className={styles.middleImage} initial={{ opacity: 0, y: 100 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1 }}>
+                        <img src={banner} alt="banner" />
+                    </motion.div>
+
+                    {/* text Decreations */}
+                    <motion.div className={styles.lastText} initial={{ opacity: 0, x: 100 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 1 }}>
+                        <p>I design interfaces in <span>Figma</span>, then build them in <span>React</span>, <span>Node</span> and <span>Shopify.</span></p>
+                        <div className={styles.styleBox}>
+
+                            <div className={styles.styleBoxes}>
+                                <div className={styles.stylesUser}>
+                                    <h3>1.5+</h3>
+                                    <span>Years Experience</span>
+                                </div>
+
+                                <div className={styles.stylesUser}>
+                                    <h3>3+</h3>
+                                    <span>Internships</span>
+                                </div>
+
+                                <div className={styles.stylesUser}>
+                                    <h3>7+</h3>
+                                    <span>Projects Built</span>
+                                </div>
+
+                                <div className={styles.stylesUser}>
+                                    <h3>10+</h3>
+                                    <span>Technologies</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </motion.div>
                 </div>
             </section>
 

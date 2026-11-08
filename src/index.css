@@ -3,4 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Arial", "Helvetica", sans-serif;
+    overscroll-behavior: smooth;
+    position: relative;
 }
+
+body{
+    cursor: none;
+}
+
