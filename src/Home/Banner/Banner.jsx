@@ -3,7 +3,7 @@ import styles from './Banner.module.css'
 
 const developer = [
     "Frontend Developer",
-    "Full Stack Developer",
+    "FullStack Developer",
     "UI/UX Designer",
     "Shopify Developer",
     "Software Developer"
@@ -20,6 +20,10 @@ function Banner() {
         return () => clearTimeout(inteval)
     }, [store])
 
+    const words = developer[store].split(" ");
+    const newWords = words[0]
+    const newOther = words[1]
+
     return (
         <>
             <section className={styles.bannerUser}>
@@ -30,7 +34,15 @@ function Banner() {
                             <h1>Javarikapishan <br /><span>Lokesh</span></h1>
                         </div>
                         <div className={styles.bannerSlide}>
-                            <h1>{developer[store]}</h1>
+                            <h1 key={store}>
+                                <span className={styles.firstWord}>{newWords}</span>{" "}
+                                <span className={styles.secondWord}>{newOther}</span>
+                            </h1>
+                        </div>
+
+                        <div className={styles.BannerButton}>
+                            <button className={styles.FirstButton}>See my work</button>
+                            <button className={styles.secondButton}>Get in Touch</button>
                         </div>
                     </div>
                 </div>

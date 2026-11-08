@@ -61,8 +61,123 @@
     color: #208F63;
 }
 
+.bannerSlide {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
 .bannerSlide h1 {
     font-size: 4rem;
     font-weight: 700;
-   
+}
+
+.firstWord {
+    display: inline-block;
+    color: black;
+    animation: slideUp 0.8s ease-in-out;
+}
+
+.secondWord {
+    display: inline-block;
+    color: #208F63;
+    animation: slideUp 1s ease-in-out;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* button */
+.BannerButton {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.FirstButton {
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    background: #208F63;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid #208F63;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.FirstButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+    z-index: -1;
+}
+
+.FirstButton:hover::before {
+    transform: scaleX(1);
+}
+
+.FirstButton:hover {
+    color: #208F63;
+}
+
+.secondButton{
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #208F63;
+    border: 2px solid #208F63;
+    background-color: white;
+    outline: none;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.secondButton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #208F63;
+    transform-origin: left;
+    transform: scaleX(0);
+    z-index: -1;
+    transition: transform 0.4s ease;
+}
+
+.secondButton:hover::before {
+    transform: scaleX(1);
+}
+
+.secondButton:hover {
+    color: white;
 }
