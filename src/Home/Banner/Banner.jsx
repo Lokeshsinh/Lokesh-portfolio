@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styles from './Banner.module.css'
+import banner from '../../assets/Logo/banner.png'
 
 const developer = [
     "Frontend Developer",
@@ -44,6 +45,12 @@ function Banner() {
                             <button className={styles.FirstButton}>See my work</button>
                             <button className={styles.secondButton}>Get in Touch</button>
                         </div>
+                    </div>
+
+                    {/* Middle image */}
+
+                    <div className={styles.middleImage}>
+                        <img  src={banner} alt="banner" />
                     </div>
                 </div>
             </section>
