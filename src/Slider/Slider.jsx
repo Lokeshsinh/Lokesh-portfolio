@@ -66,20 +66,20 @@ function Slider() {
             tool: "SQL"
         },
     ]
+
     return (
         <>
             <div className={styles.SliderMar}>
-                <motion.div className={styles.MaequeeSlide}
-                >
-                    {skils.map((item, index) => (
+                <div className={styles.MaequeeSlide}>
+                    {[...skils, ...skils, ...skils].map((item, index) => (
                         <div className={styles.marqueBox} key={index}>
                             <div className={styles.ImageCircle}>
-                                <img src={item.image} alt={item.image} />
+                                <img src={item.image} alt={item.tool} />
                             </div>
                             <span>{item.tool}</span>
                         </div>
                     ))}
-                </motion.div>
+                </div>
             </div>
         </>
     );
