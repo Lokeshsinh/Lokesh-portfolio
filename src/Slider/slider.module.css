@@ -1,0 +1,58 @@
+.SliderMar {
+    width: 100%;
+    height: 73px;
+    background: black;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.MaequeeSlide {
+    width: max-content;
+    display: flex;
+    gap: 50px;
+}
+
+
+.marqueBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 20px 5px 10px;
+    background-color: white;
+    border-radius: 30px;
+    /* animation: sliderAnime 3s linear infinite; */
+}
+
+.ImageCircle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.ImageCircle img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.marqueBox span {
+    font-size: 15px;
+    font-weight: 550;
+}
+
+
+@keyframes sliderAnime {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
