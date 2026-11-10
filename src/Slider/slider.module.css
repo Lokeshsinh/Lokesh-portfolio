@@ -33,7 +33,7 @@
 
 }
 
-.MaequeeSlide:hover .marqueBox{
+.SliderMar:hover .MaequeeSlide {
     animation-play-state: paused;
 }
 

@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.aboutSec {
+    width: 100%;
+    padding: 0 60px;
+    position: relative;
+}
+
+.aboutFlex {
+    padding: 70px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Text */
+
+.aboutText {
+    max-width: 53%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.aboutHead {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aboutHead h3 {
+    font-size: 1.9rem;
+    color: #208F63;
+}
+
+.aboutHead h1 {
+    font-size: 2.9rem;
+    font-weight: 600;
+}
+
+.aboutHead h1 span {
+    color: #208F63;
+}
+
+
+
+/* para */
+.aboutPara {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px 30px;
+    width: 100%;
+    height: 200px;
+}
+
+.aboutPara p {
+    font-size: 26px;
+    line-height: 1.5;
+    word-spacing: 1px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.848);
+}
+
+/* about bottom */
+.aboutBottom {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 30px;
+}
+
+
+.arrowButton {
+    display: flex;
+}
+
+.arrowBtn {
+    padding: 15px;
+    width: 45px;
+    height: 45px;
+    font-size: 32px;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}

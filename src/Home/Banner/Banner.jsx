@@ -17,7 +17,7 @@ function Banner() {
             setStore((prev) => (prev + 1) % developer.length)
         }, 2000)
 
-        console.log(store)
+
         return () => clearTimeout(inteval)
     }, [store])
 
