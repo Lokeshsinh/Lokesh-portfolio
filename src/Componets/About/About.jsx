@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import styles from './About.module.css'
 import { motion, AnimatePresence } from "motion/react";
+import user from '../../assets/Slider/comma.png'
 
 const aboutMe = [
     <>
@@ -56,14 +57,17 @@ function About() {
                             <h3>About Me</h3>
                             <h1>Code Meets  <span>Creativity</span>.</h1>
                         </div>
-                        <div className={styles.aboutPara} >
-                            <AnimatePresence mode='wait'>
-                                <motion.p key={current}
-                                    initial={{ opacity: 0, x: 100 }}
-                                    animate={{ opacity: 1, x: 0 }}
-                                    exit={{ opacity: 0, x: -100 }}
-                                    transition={{ duration: 0.5 }}>{aboutMe[current]}</motion.p>
-                            </AnimatePresence>
+
+                        <div>
+                            <div className={styles.aboutPara} >
+                                <AnimatePresence mode='wait'>
+                                    <motion.p key={current}
+                                        initial={{ opacity: 0, x: 100 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        exit={{ opacity: 0, x: -100 }}
+                                        transition={{ duration: 0.5 }}>{aboutMe[current]}</motion.p>
+                                </AnimatePresence>
+                            </div>
                         </div>
 
                         <div className={styles.aboutBottom}>

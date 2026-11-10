@@ -52,6 +52,13 @@
     color: #208F63;
 }
 
+.commaFlex {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 20px;
+}
 
 
 /* para */
@@ -70,7 +77,7 @@
     line-height: 1.5;
     word-spacing: 1px;
     font-weight: 500;
-    color: rgba(0, 0, 0, 0.848);
+    color: rgba(0, 0, 0, 0.63);
 }
 
 /* about bottom */
