@@ -5,7 +5,7 @@
     overflow: hidden;
     white-space: nowrap;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 10px 0;
 }
@@ -15,9 +15,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 50px;
-    animation: sliderAnime 26s linear infinite;
-    will-change: transform;
+    gap: 100px;
+    animation: sliderAnime 24s linear infinite;
 }
 
 

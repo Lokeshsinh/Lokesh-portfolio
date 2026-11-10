@@ -71,7 +71,7 @@ function Slider() {
         <>
             <div className={styles.SliderMar}>
                 <div className={styles.MaequeeSlide}>
-                    {[...skils, ...skils, ...skils, ...skils].map((item, index) => (
+                    {[...skils, ...skils,].map((item, index) => (
                         <div className={styles.marqueBox} key={index}>
                             <div className={styles.ImageCircle}>
                                 <img src={item.image} alt={item.tool} />
