@@ -12,6 +12,11 @@ const developer = [
 
 function Banner() {
     const [store, setStore] = useState(0);
+    const [experies, setExperies] = useState(0);
+    const [intern, setIntern] = useState(0);
+    const [project, setProject] = useState(0);
+    const [technoloy, setTechnology] = useState(0);
+
     useEffect(() => {
         const inteval = setTimeout(() => {
             setStore((prev) => (prev + 1) % developer.length)
@@ -22,8 +27,66 @@ function Banner() {
     }, [store])
 
     const words = developer[store].split(" ");
-    const newWords = words[0]
-    const newOther = words[1]
+    const newWords = words[0];
+    const newOther = words[1];
+
+
+
+    useEffect(() => {
+        let experience = 0;
+        let internship = 0;
+        let proCount = 0;
+        let tech = 0;
+
+        const expInterval = setInterval(() => {
+            experience += 1;
+            setExperies(Number(experience.toFixed(1)));
+
+            if (experience >= 1.5) {
+                clearInterval(expInterval)
+            }
+        }, 500)
+
+        const interval = setInterval(() => {
+            internship += 1;
+            setIntern(internship);
+            if (internship >= 3) {
+                clearInterval(interval);
+            }
+        }, 500);
+
+
+        const proInterval = setInterval(() => {
+            proCount += 1;
+            setProject(proCount);
+
+            if (proCount >= 7) {
+                clearInterval(proInterval)
+            }
+        }, 300)
+
+        const techInterval = setInterval(() => {
+            tech += 1;
+            setTechnology(tech);
+
+            if (tech >= 10) {
+                clearInterval(techInterval)
+            }
+        }, 300)
+
+
+        return (() => {
+            clearInterval(experies)
+            clearInterval(interval);
+            clearInterval(proInterval);
+            clearInterval(techInterval)
+        })
+
+
+
+    }, []);
+
+
 
     return (
         <>
@@ -74,22 +137,22 @@ function Banner() {
 
                             <div className={styles.styleBoxes}>
                                 <div className={styles.stylesUser}>
-                                    <h3>1.5+</h3>
+                                    <h3>{experies}+</h3>
                                     <span>Years Experience</span>
                                 </div>
 
                                 <div className={styles.stylesUser}>
-                                    <h3>3+</h3>
+                                    <h3>{intern}+</h3>
                                     <span>Internships</span>
                                 </div>
 
                                 <div className={styles.stylesUser}>
-                                    <h3>7+</h3>
+                                    <h3>{project}+</h3>
                                     <span>Projects Built</span>
                                 </div>
 
                                 <div className={styles.stylesUser}>
-                                    <h3>10+</h3>
+                                    <h3>{technoloy}+</h3>
                                     <span>Technologies</span>
                                 </div>
                             </div>

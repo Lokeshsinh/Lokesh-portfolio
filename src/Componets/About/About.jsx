@@ -79,30 +79,30 @@ function About() {
 
 
 
-    const handleMouseMove = (e) => {
-        const rect = e.currentTarget.getBoundingClientRect();
+    // const handleMouseMove = (e) => {
+    //     const rect = e.currentTarget.getBoundingClientRect();
 
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
+    //     const x = e.clientX - rect.left;
+    //     const y = e.clientY - rect.top;
 
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
+    //     const centerX = rect.width / 2;
+    //     const centerY = rect.height / 2;
 
-        const rotateY = ((x - centerX) / centerX) * 15;
-        const rotateX = -((y - centerY) / centerY) * 15;
+    //     const rotateY = ((x - centerX) / centerX) * 15;
+    //     const rotateX = -((y - centerY) / centerY) * 15;
 
-        setRotate({
-            rotateX,
-            rotateY,
-        });
-    };
+    //     setRotate({
+    //         rotateX,
+    //         rotateY,
+    //     });
+    // };
 
-    const handleMouseLeave = () => {
-        setRotate({
-            rotateX: 0,
-            rotateY: 0,
-        });
-    };
+    // const handleMouseLeave = () => {
+    //     setRotate({
+    //         rotateX: 0,
+    //         rotateY: 0,
+    //     });
+    // };
 
 
     return (
@@ -112,12 +112,14 @@ function About() {
                     {/* ABout me */}
                     <div className={styles.aboutText}>
                         <div className={styles.aboutHead}>
-                            <h3>About Me</h3>
-                            <h1>Code Meets  <span>Creativity</span>.</h1>
+                            <div className={styles.aboutLabel}>
+                                <span className={styles.aboutSpan}>About Me</span>
+                            </div>
+                            <h1>Passionate About Code  <br /><span>Driven by Creativity</span>.</h1>
                         </div>
 
                         <div>
-                            <div className={styles.aboutPara} >
+                            {/* <div className={styles.aboutPara} >
                                 <AnimatePresence mode='wait'>
                                     <motion.p key={current}
                                         initial={{ opacity: 0, x: 100 }}
@@ -125,12 +127,12 @@ function About() {
                                         exit={{ opacity: 0, x: -100 }}
                                         transition={{ duration: 0.5 }}>{aboutMe[current]}</motion.p>
                                 </AnimatePresence>
-                            </div>
+                            </div> */}
                         </div>
 
                         <div className={styles.aboutBottom}>
 
-                            <div className={styles.bottomCard}>
+                            {/* <div className={styles.bottomCard}>
                                 <AnimatePresence mode='wait'>
                                     <motion.div className={styles.bottomImg} key={secCurrent}
                                         initial={{ opacity: 0, x: 100 }}
@@ -150,37 +152,23 @@ function About() {
                                         <span className={styles.secondWord}>{word2}</span>
                                     </motion.p>
                                 </AnimatePresence>
-                            </div>
+                            </div> */}
 
-                            <div className={styles.arrowButton}>
+                            {/* <div className={styles.arrowButton}>
                                 <button className={styles.arrowBtn} onClick={handlerPrev}></button>
                                 <button className={styles.arrowBtn} onClick={handleNext}></button>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     {/* Id card */}
 
 
                     <div className={styles.AboutIdcard}>
-                        <div
-                            className={styles.aboutIdimage}
-                            onMouseMove={handleMouseMove}
-                            onMouseLeave={handleMouseLeave}
-                        >
+                        {/* <div className={styles.aboutIdimage}>
                             <motion.img
                                 src={Idcard}
-                                alt="Developer ID Card"
-                                animate={{
-                                    rotateX: rotate.rotateX,
-                                    rotateY: rotate.rotateY,
-                                }}
-                                transition={{
-                                    type: "spring",
-                                    stiffness: 150,
-                                    damping: 20,
-                                }}
-                            />
-                        </div>
+                                alt="Developer ID Card" />
+                        </div> */}
                     </div>
 
                 </div>
