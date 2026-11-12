@@ -28,6 +28,9 @@ function Banner() {
     return (
         <>
             <section className={styles.bannerUser}>
+                <div className={styles.bannerBackText}>
+                    <h1>Portfoloio</h1>
+                </div>
                 <div className={styles.bannerFlex}>
                     {/* text */}
                     <motion.div className={styles.bannerText}

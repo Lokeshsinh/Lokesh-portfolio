@@ -16,8 +16,32 @@
     padding: 0 60px;
     overflow: hidden;
 
+
 }
 
+
+.bannerBackText {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.bannerBackText h1 {
+    font-family: "Bowlby One SC", sans-serif;
+    font-size: 15rem;
+    font-weight: 900;
+    color: #208F63;
+    opacity: 0.14;
+    letter-spacing: 5px;
+}
 
 .bannerFlex {
     width: 100%;
@@ -241,7 +265,7 @@
 }
 
 .stylesUser {
-    padding: 20px 40px;
+    padding: 23px 40px;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -255,7 +279,7 @@
 .stylesUser:hover {
     transform: translateY(-5px);
     border-color: #208F63;
-    box-shadow: 0 5px 15px rgba(32, 143, 99, 0.1);
+    box-shadow: 0 5px 15px rgba(32, 143, 99, 0.662);
 }
 
 .stylesUser h3 {
@@ -270,4 +294,1034 @@
     color: #555;
     font-weight: 500;
     text-align: center;
+}
+
+
+/* reponsive */
+
+@media (max-width: 1400px) {
+    .bannerUser {
+        padding: 0 40px;
+    }
+
+    .bannerText {
+        width: 36%;
+    }
+
+    .middleImage {
+        width: 32%;
+        height: 550px;
+    }
+
+    .lastText {
+        width: 32%;
+        padding-left: 1rem;
+    }
+
+    .bannerName h1 {
+        font-size: 3.6rem;
+    }
+
+    .bannerSlide h1 {
+        font-size: 2.7rem;
+    }
+
+    .FirstButton {
+        padding: 10px 20px;
+        border-radius: 15px;
+    }
+
+    .secondButton {
+        padding: 10px 20px;
+        border-radius: 15px;
+    }
+
+    .middleImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 310px;
+        height: 490px;
+    }
+
+
+    .lastText p {
+        font-size: 26px;
+    }
+
+    .bannerBackText h1 {
+        font-size: 11rem;
+    }
+
+    .stylesUser {
+        padding: 15px 30px;
+    }
+
+    .stylesUser h3 {
+        font-size: 1.8rem;
+    }
+}
+
+
+@media (max-width: 1280px) {
+    .bannerUser {
+        padding: 0 40px;
+    }
+
+    .bannerText {
+        width: 39%;
+    }
+
+    .bannerName h1 {
+        font-size: 3.7rem;
+    }
+
+    .bannerName h2,
+    .bannerName h2 span {
+        font-size: 3rem;
+    }
+
+    .bannerSlide h1 {
+        font-size: 2.7rem;
+    }
+
+    .FirstButton,
+    .secondButton {
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 15px;
+    }
+
+    .middleImage {
+        width: 320px;
+        height: 530px;
+    }
+
+    .lastText {
+        width: 32%;
+        padding-left: 15px;
+    }
+
+    .lastText p {
+        font-size: 26px;
+    }
+
+    .bannerBackText h1 {
+        font-size: 13rem;
+    }
+
+    .stylesUser {
+        padding: 15px 18px;
+    }
+
+    .stylesUser h3 {
+        font-size: 1.8rem;
+    }
+
+    .stylesUser span {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 1220px) {
+    .bannerUser {
+        padding: 0 40px;
+    }
+
+    .bannerText {
+        width: 38%;
+    }
+
+    .bannerName h1 {
+        font-size: 3.6rem;
+    }
+
+    .bannerName h2,
+    .bannerName h2 span {
+        font-size: 2.8rem;
+    }
+
+    .bannerSlide h1 {
+        font-size: 2.4rem;
+    }
+
+    .FirstButton,
+    .secondButton {
+        padding: 10px 17px;
+        font-size: 15px;
+        border-radius: 15px;
+    }
+
+    .BannerButton {
+        gap: 12px;
+    }
+
+    .middleImage {
+        width: 320px;
+        height: 520px;
+    }
+
+    .lastText {
+        width: 32%;
+        padding-left: 12px;
+    }
+
+    .lastText p {
+        font-size: 25px;
+    }
+
+    .bannerBackText h1 {
+        font-size: 12rem;
+    }
+
+    .stylesUser {
+        padding: 14px 12px;
+    }
+
+    .stylesUser h3 {
+        font-size: 1.6rem;
+    }
+
+    .stylesUser span {
+        font-size: 11px;
+    }
+}
+
+
+@media (max-width: 1130px) {
+    .bannerUser {
+        padding: 0 30px;
+    }
+
+    .bannerText {
+        width: 37%;
+    }
+
+    .bannerName h1 {
+        font-size: 3.2rem;
+    }
+
+    .bannerName h2,
+    .bannerName h2 span {
+        font-size: 2.6rem;
+    }
+
+    .bannerSlide h1 {
+        font-size: 2.1rem;
+    }
+
+    .FirstButton,
+    .secondButton {
+        padding: 9px 15px;
+        font-size: 14px;
+        border-radius: 14px;
+    }
+
+    .BannerButton {
+        gap: 10px;
+    }
+
+    .middleImage {
+        width: 300px;
+        height: 500px;
+    }
+
+    .lastText {
+        width: 32%;
+        padding-left: 10px;
+    }
+
+    .lastText p {
+        font-size: 22px;
+    }
+
+    .bannerBackText h1 {
+        font-size: 11rem;
+    }
+
+    .stylesUser {
+        padding: 12px 10px;
+    }
+
+    .stylesUser h3 {
+        font-size: 1.5rem;
+    }
+
+    .stylesUser span {
+        font-size: 11px;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .bannerUser {
+        height: auto;
+        min-height: 110vh;
+        padding: 100px 30px 0;
+    }
+
+    .bannerFlex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .bannerText {
+        order: 1;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .lastText {
+        order: 2;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .bannerName h1 {
+        font-size: 3.6rem;
+    }
+
+    .bannerSlide h1 {
+        font-size: 2.7rem;
+    }
+
+
+    .middleImage {
+        order: 3;
+        width: 350px;
+        max-width: 100%;
+        height: 480px;
+    }
+
+    .middleImage img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .bannerSlide {
+        justify-content: center;
+    }
+
+    .BannerButton {
+        justify-content: center;
+    }
+
+    .FirstButton,
+    .secondButton {
+        padding: 15px 20px;
+        font-size: 14px;
+        border-radius: 14px;
+    }
+
+    .lastText p {
+        max-width: 550px;
+        font-size: 24px;
+    }
+
+    .styleBox {
+        max-width: 550px;
+    }
+
+    .lastText p {
+        font-size: 24px;
+    }
+
+
+    .styleBoxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bannerBackText h1 {
+        font-size: 10rem;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .bannerUser {
+        min-height: 100vh;
+        padding: 100px 25px 0;
+    }
+
+    .bannerFlex {
+        gap: 25px;
+    }
+
+    .bannerText {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .bannerName h1 {
+        font-size: 3.2rem;
+    }
+
+    .bannerName h2,
+    .bannerName h2 span {
+        font-size: 2.5rem;
+    }
+
+    .bannerSlide h1 {
+        font-size: 2.4rem;
+    }
+
+    .BannerButton {
+        gap: 15px;
+    }
+
+    .FirstButton,
+    .secondButton {
+        padding: 13px 18px;
+        font-size: 14px;
+    }
+
+    .lastText {
+        width: 100%;
+    }
+
+    .lastText p {
+        max-width: 500px;
+        font-size: 22px;
+    }
+
+    .styleBox {
+        max-width: 500px;
+        margin-top: 20px;
+    }
+
+    .styleBoxes {
+        gap: 10px;
+    }
+
+    .stylesUser {
+        padding: 15px 12px;
+    }
+
+    .stylesUser h3 {
+        font-size: 1.6rem;
+    }
+
+    .stylesUser span {
+        font-size: 12px;
+    }
+
+    .middleImage {
+        order: 3;
+        width: 320px;
+        height: 430px;
+    }
+
+    .bannerBackText h1 {
+        font-size: 8rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .bannerUser {
+        min-height: 100vh;
+        padding: 90px 20px 0;
+    }
+
+    .bannerFlex {
+        gap: 22px;
+    }
+
+    .bannerText {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .bannerName h1 {
+        font-size: 2.8rem;
+    }
+
+    .bannerName h2,
+    .bannerName h2 span {
+        font-size: 2.3rem;
+    }
+
+    .bannerSlide h1 {
+        font-size: 2.1rem;
+    }
+
+    .BannerButton {
+        gap: 12px;
+    }
+
+    .FirstButton,
+    .secondButton {
+        padding: 12px 17px;
+        font-size: 14px;
+        border-radius: 13px;
+    }
+
+    .lastText {
+        width: 100%;
+    }
+
+    .lastText p {
+        max-width: 450px;
+        font-size: 20px;
+    }
+
+    .styleBox {
+        max-width: 450px;
+        margin-top: 18px;
+    }
+
+    .styleBoxes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .stylesUser {
+        padding: 15px 10px;
+    }
+
+    .stylesUser h3 {
+        font-size: 1.5rem;
+    }
+
+    .stylesUser span {
+        font-size: 12px;
+    }
+
+    .middleImage {
+        order: 3;
+        width: 300px;
+        height: 380px;
+    }
+
+    .middleImage img {
+        object-fit: contain;
+    }
+
+    .bannerBackText h1 {
+        font-size: 8rem;
+        letter-spacing: 2px;
+    }
+}
+
+
+@media (max-width: 580px) {
+    .bannerUser {
+        min-height: 100vh;
+        padding: 110px 18px 0;
+    }
+
+    .bannerFlex {
+        gap: 20px;
+    }
+
+    .bannerText {
+        width: 100%;
+        gap: 12px;
+    }
+
+    .bannerName h1 {
+        font-size: 2.4rem;
+    }
+
+    .bannerName h2,
+    .bannerName h2 span {
+        font-size: 2rem;
+    }
+
+    .bannerSlide h1 {
+        font-size: 1.8rem;
+    }
+
+    .BannerButton {
+        gap: 10px;
+        margin-top: 8px;
+    }
+
+    .FirstButton,
+    .secondButton {
+        padding: 11px 15px;
+        font-size: 13px;
+        border-radius: 12px;
+    }
+
+    .lastText {
+        width: 100%;
+    }
+
+    .lastText p {
+        max-width: 400px;
+        font-size: 18px;
+    }
+
+    .styleBox {
+        max-width: 300px;
+        margin-top: 15px;
+    }
+
+    .styleBoxes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .stylesUser {
+        padding: 10px 8px;
+    }
+
+    .stylesUser h3 {
+        font-size: 1.4rem;
+    }
+
+    .stylesUser span {
+        font-size: 11px;
+    }
+
+    .middleImage {
+        order: 3;
+        width: 290px;
+        height: 340px;
+    }
+
+    .middleImage img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .bannerBackText h1 {
+        font-size: 5.5rem;
+        letter-spacing: 2px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .bannerUser {
+        min-height: 100vh;
+        padding: 110px 15px 0;
+    }
+
+    .bannerFlex {
+        gap: 18px;
+    }
+
+    .bannerText {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .bannerName h1 {
+        font-size: 2.1rem;
+    }
+
+    .bannerName h2,
+    .bannerName h2 span {
+        font-size: 1.8rem;
+    }
+
+    .bannerSlide h1 {
+        font-size: 1.6rem;
+    }
+
+    .BannerButton {
+        gap: 8px;
+        margin-top: 5px;
+    }
+
+    .FirstButton,
+    .secondButton {
+        padding: 10px 13px;
+        font-size: 12px;
+        border-radius: 11px;
+    }
+
+    .lastText {
+        width: 100%;
+    }
+
+    .lastText p {
+        max-width: 350px;
+        font-size: 16px;
+    }
+
+    .styleBox {
+        max-width: 350px;
+        margin-top: 12px;
+    }
+
+    .styleBoxes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 7px;
+    }
+
+    .stylesUser {
+        padding: 12px 6px;
+    }
+
+    .stylesUser h3 {
+        font-size: 1.3rem;
+    }
+
+    .stylesUser span {
+        font-size: 10px;
+    }
+
+    .middleImage {
+        order: 3;
+        width: 230px;
+        height: 300px;
+    }
+
+    .middleImage img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .bannerBackText h1 {
+        font-size: 4.3rem;
+        letter-spacing: 1px;
+    }
+}
+
+
+@media (max-width: 430px) {
+    .bannerUser {
+        min-height: 100vh;
+        padding: 105px 12px 0;
+    }
+
+    .bannerFlex {
+        gap: 16px;
+    }
+
+    .bannerText {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .bannerName h1 {
+        font-size: 1.9rem;
+    }
+
+    .bannerName h2,
+    .bannerName h2 span {
+        font-size: 1.7rem;
+    }
+
+    .bannerSlide h1 {
+        font-size: 1.45rem;
+    }
+
+    .BannerButton {
+        gap: 8px;
+        margin-top: 5px;
+    }
+
+    .FirstButton,
+    .secondButton {
+        padding: 9px 12px;
+        font-size: 11px;
+        border-radius: 10px;
+    }
+
+    .lastText {
+        width: 100%;
+    }
+
+    .lastText p {
+        max-width: 320px;
+        font-size: 15px;
+    }
+
+    .styleBox {
+        max-width: 320px;
+        margin-top: 10px;
+    }
+
+    .styleBoxes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+
+    .stylesUser {
+        padding: 10px 5px;
+    }
+
+    .stylesUser h3 {
+        font-size: 1.2rem;
+    }
+
+    .stylesUser span {
+        font-size: 9px;
+    }
+
+
+    .middleImage {
+        order: 3;
+        width: 210px;
+        height: 280px;
+    }
+
+    .middleImage img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .bannerBackText h1 {
+        font-size: 3.8rem;
+        letter-spacing: 1px;
+    }
+}
+
+
+@media (max-width: 390px) {
+    .bannerUser {
+        min-height: 100vh;
+        padding: 90px 10px 0;
+    }
+
+    .bannerFlex {
+        gap: 15px;
+    }
+
+    .bannerText {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .bannerName h1 {
+        font-size: 1.7rem;
+    }
+
+    .bannerName h2,
+    .bannerName h2 span {
+        font-size: 1.5rem;
+    }
+
+    .bannerSlide h1 {
+        font-size: 1.3rem;
+    }
+
+    .BannerButton {
+        gap: 7px;
+        margin-top: 5px;
+    }
+
+    .FirstButton,
+    .secondButton {
+        padding: 9px 11px;
+        font-size: 11px;
+        border-radius: 9px;
+    }
+
+    .lastText {
+        width: 100%;
+    }
+
+    .lastText p {
+        max-width: 300px;
+        font-size: 14px;
+    }
+
+    .styleBox {
+        max-width: 300px;
+        margin-top: 10px;
+    }
+
+    .styleBoxes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .stylesUser {
+        padding: 10px 4px;
+    }
+
+    .stylesUser h3 {
+        font-size: 1.1rem;
+    }
+
+    .stylesUser span {
+        font-size: 9px;
+    }
+
+    .middleImage {
+        order: 3;
+        width: 190px;
+        height: 260px;
+    }
+
+    .middleImage img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .bannerBackText h1 {
+        font-size: 2.7rem;
+        letter-spacing: 0;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .bannerUser {
+        min-height: 100vh;
+        padding: 95px 10px 0;
+    }
+
+    .bannerFlex {
+        gap: 14px;
+    }
+
+    .bannerText {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .bannerName h1 {
+        font-size: 1.55rem;
+    }
+
+    .bannerName h2,
+    .bannerName h2 span {
+        font-size: 1.4rem;
+    }
+
+    .bannerSlide h1 {
+        font-size: 1.2rem;
+    }
+
+    .BannerButton {
+        gap: 6px;
+        margin-top: 5px;
+    }
+
+    .FirstButton,
+    .secondButton {
+        padding: 8px 10px;
+        font-size: 10px;
+        border-radius: 9px;
+    }
+
+    .lastText {
+        width: 100%;
+    }
+
+    .lastText p {
+        max-width: 280px;
+        font-size: 13px;
+    }
+
+    .styleBox {
+        max-width: 280px;
+        margin-top: 8px;
+    }
+
+    .styleBoxes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .stylesUser {
+        padding: 9px 4px;
+    }
+
+    .stylesUser h3 {
+        font-size: 1rem;
+    }
+
+    .stylesUser span {
+        font-size: 8px;
+    }
+
+    .middleImage {
+        order: 3;
+        width: 175px;
+        height: 240px;
+    }
+
+    .middleImage img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .bannerBackText h1 {
+        font-size: 2.4rem;
+    }
+}
+
+
+@media (max-width: 340px) {
+    .bannerUser {
+        padding: 90px 8px 0;
+    }
+
+    .bannerFlex {
+        gap: 12px;
+    }
+
+    .bannerName h1 {
+        font-size: 1.4rem;
+    }
+
+    .bannerName h2,
+    .bannerName h2 span {
+        font-size: 1.3rem;
+    }
+
+    .bannerSlide h1 {
+        font-size: 1.05rem;
+    }
+
+    .FirstButton,
+    .secondButton {
+        padding: 8px 9px;
+        font-size: 9px;
+    }
+
+    .lastText p {
+        max-width: 260px;
+        font-size: 12px;
+    }
+
+    .styleBox {
+        max-width: 260px;
+    }
+
+    .stylesUser {
+        padding: 8px 3px;
+    }
+
+    .stylesUser h3 {
+        font-size: 0.9rem;
+    }
+
+    .stylesUser span {
+        font-size: 8px;
+    }
+
+    .middleImage {
+        order: 3;
+        width: 160px;
+        height: 220px;
+    }
+
+    .bannerBackText h1 {
+        font-size: 2.1rem;
+        letter-spacing: 0;
+    }
 }
